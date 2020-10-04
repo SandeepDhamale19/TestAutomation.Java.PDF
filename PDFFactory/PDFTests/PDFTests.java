@@ -36,27 +36,27 @@ public class PDFTests {
 	@Test
 	public static void PDF_ReadLocalPDF() throws InterruptedException, IOException
 	{
-        PDFFunctions.ReadPDFLocal("C:\\Users\\sande\\eclipse-workspace\\TestAutomation.AutoIT\\Files\\test-automation-brochure_2014-11-05_v07.pdf");        
+        PDFFunctions.ReadPDFLocal("\\TestAutomation.PDF\\Files\\test-automation-brochure_2014-11-05_v07.pdf");        
         
 	}
 	
 	@Test
 	public static void PDF_ReadLocalPDFAtPage() throws InterruptedException, IOException
 	{
-        PDFFunctions.ReadPDFLocalAtPage("C:\\Users\\sande\\eclipse-workspace\\TestAutomation.AutoIT\\Files\\test-automation-brochure_2014-11-05_v07.pdf", 1);        
+        PDFFunctions.ReadPDFLocalAtPage("\\TestAutomation.PDF\\Files\\test-automation-brochure_2014-11-05_v07.pdf", 1);        
         
 	}
 	
 	@Test
 	public static void PDF_ReadLocalPDFBetweenPages() throws InterruptedException, IOException
 	{
-		PDFFunctions.ReadPDFLocalBetweenPages("C:\\Users\\sande\\eclipse-workspace\\TestAutomation.AutoIT\\Files\\test-automation-brochure_2014-11-05_v07.pdf", 1,2);
-		//PDFFunctions.ReadPDFLocalBetweenPages("C:\\Users\\sande\\eclipse-workspace\\TestAutomation.AutoIT\\Files\\test-automation-brochure_2014-11-05_v07.pdf", 1,2);        
+		PDFFunctions.ReadPDFLocalBetweenPages("\\TestAutomation.PDF\\Files\\test-automation-brochure_2014-11-05_v07.pdf", 1,2);
+		//PDFFunctions.ReadPDFLocalBetweenPages("\\TestAutomation.PDF\\Files\\test-automation-brochure_2014-11-05_v07.pdf", 1,2);        
         
 	}
 	
 	private String GetPath() {
 		File dir = new File(System.getProperty("user.dir"));
-        return dir.toString() + "\\OutlookFactory\\Files";
+        return dir.toString() + "\\TestAutomation.PDF\\Files";
 	}
 }
